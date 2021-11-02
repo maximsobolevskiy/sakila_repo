@@ -16,6 +16,11 @@
               <entry key="QualifyWithSchema" value="ALWAYS" />
             </map>
           </option>
+          <option name="scopes">
+            <map>
+              <entry key="$PROJECT_DIR$/sakila_repo" value="my_db" />
+            </map>
+          </option>
         </State>
       </list>
     </option>
