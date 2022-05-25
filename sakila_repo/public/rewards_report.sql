@@ -12,7 +12,7 @@ BEGIN
 
     /* Some sanity checks... */
     IF min_monthly_purchases = 0 THEN
-        RAISE EXCEPTION 'Minimum monthly purchases parameter must be greater than 0';
+        RAISE EXCEPTION 'Minimum monthly purchases parameter must be > 0';
     END IF;
     IF min_dollar_amount_purchased = 0.00 THEN
         RAISE EXCEPTION 'Minimum monthly dollar amount purchased parameter must be > $0.00';

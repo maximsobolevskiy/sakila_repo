@@ -4,8 +4,7 @@ CREATE TABLE public.actor
         PRIMARY KEY,
     first_name  varchar(45)                                               NOT NULL,
     last_name   varchar(45)                                               NOT NULL,
-    last_update timestamp DEFAULT NOW()                                   NOT NULL,
-    image       bytea
+    last_update timestamp DEFAULT NOW()                                   NOT NULL
 );
 
 ALTER TABLE public.actor
