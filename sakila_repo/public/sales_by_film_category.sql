@@ -1,6 +1,6 @@
 CREATE VIEW public.sales_by_film_category(category, total_sales) AS
 SELECT c.name        AS category,
-       SUM(p.amount) AS amount
+       SUM(p.amount) AS total_sales
 FROM payment p
          JOIN rental r ON p.rental_id = r.rental_id
          JOIN inventory i ON r.inventory_id = i.inventory_id
