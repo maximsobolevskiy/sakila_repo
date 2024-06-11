@@ -6,6 +6,7 @@
         <State>
           <option name="id" value="3a49f605-7ed0-4a74-b749-d4c27df49dc8" />
           <option name="name" value="postgres@localhost (DDL)" />
+          <option name="dbmsName" value="POSTGRES" />
           <option name="urls">
             <array>
               <option value="file://$PROJECT_DIR$/sakila_repo" />
