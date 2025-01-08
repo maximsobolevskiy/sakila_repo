@@ -3,7 +3,7 @@ SELECT s.staff_id                                             AS id,
        (s.first_name::text || ' '::text) || s.last_name::text AS name,
        a.address,
        a.postal_code                                          AS "zip code",
-       a.phone,
+       a.phone as phone,
        city.city,
        country.country,
        s.store_id                                             AS sid
