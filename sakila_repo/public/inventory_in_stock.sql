@@ -1,6 +1,5 @@
 CREATE FUNCTION public.inventory_in_stock(p_inventory_id integer) RETURNS boolean
-    LANGUAGE plpgsql
-AS
+    LANGUAGE plpgsql AS
 $$
 DECLARE
     v_rentals INTEGER;
@@ -27,8 +26,7 @@ BEGIN
     ELSE
       RETURN TRUE;
     END IF;
-END
-$$;
+END $$;
 
 ALTER FUNCTION public.inventory_in_stock(integer) OWNER TO guest;
 

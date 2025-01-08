@@ -1,6 +1,5 @@
 CREATE FUNCTION public.inventory_held_by_customer(p_inventory_id integer) RETURNS integer
-    LANGUAGE plpgsql
-AS
+    LANGUAGE plpgsql AS
 $$
 DECLARE
     v_customer_id INTEGER;
@@ -12,8 +11,7 @@ BEGIN
   AND inventory_id = p_inventory_id;
 
   RETURN v_customer_id;
-END
-$$;
+END $$;
 
 ALTER FUNCTION public.inventory_held_by_customer(integer) OWNER TO guest;
 

@@ -1,15 +1,11 @@
 CREATE TABLE public.staff
 (
-    staff_id    integer   DEFAULT NEXTVAL('staff_staff_id_seq'::regclass) NOT NULL
-        PRIMARY KEY,
+    staff_id    integer   DEFAULT NEXTVAL('staff_staff_id_seq'::regclass) NOT NULL PRIMARY KEY,
     first_name  varchar(45)                                               NOT NULL,
     last_name   varchar(45)                                               NOT NULL,
-    address_id  smallint                                                  NOT NULL
-        REFERENCES public.address
-            ON UPDATE CASCADE ON DELETE RESTRICT,
+    address_id  smallint                                                  NOT NULL REFERENCES public.address ON UPDATE CASCADE ON DELETE RESTRICT,
     email       varchar(50),
-    store_id    smallint                                                  NOT NULL
-        REFERENCES public.store,
+    store_id    smallint                                                  NOT NULL REFERENCES public.store,
     active      boolean   DEFAULT TRUE                                    NOT NULL,
     username    varchar(16)                                               NOT NULL,
     password    varchar(40),

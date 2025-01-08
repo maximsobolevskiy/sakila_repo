@@ -1,7 +1,6 @@
 CREATE TABLE public.language
 (
-    language_id integer   DEFAULT NEXTVAL('language_language_id_seq'::regclass) NOT NULL
-        PRIMARY KEY,
+    language_id integer   DEFAULT NEXTVAL('language_language_id_seq'::regclass) NOT NULL PRIMARY KEY,
     name        char(20)                                                        NOT NULL,
     last_update timestamp DEFAULT NOW()                                         NOT NULL
 );

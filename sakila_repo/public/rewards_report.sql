@@ -1,7 +1,6 @@
 CREATE FUNCTION public.rewards_report(min_monthly_purchases integer, min_dollar_amount_purchased numeric) RETURNS SETOF customer
     SECURITY DEFINER
-    LANGUAGE plpgsql
-AS
+    LANGUAGE plpgsql AS
 $$
 DECLARE
     last_month_start DATE;

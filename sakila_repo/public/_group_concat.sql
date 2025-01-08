@@ -1,7 +1,6 @@
 CREATE FUNCTION public._group_concat(text, text) RETURNS text
     IMMUTABLE
-    LANGUAGE sql
-AS
+    LANGUAGE sql AS
 $$
 SELECT CASE
   WHEN $2 IS NULL THEN $1

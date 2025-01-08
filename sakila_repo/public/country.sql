@@ -1,7 +1,6 @@
 CREATE TABLE public.country
 (
-    country_id  integer   DEFAULT NEXTVAL('country_country_id_seq'::regclass) NOT NULL
-        PRIMARY KEY,
+    country_id  integer   DEFAULT NEXTVAL('country_country_id_seq'::regclass) NOT NULL PRIMARY KEY,
     country     varchar(50)                                                   NOT NULL,
     last_update timestamp DEFAULT NOW()                                       NOT NULL
 );

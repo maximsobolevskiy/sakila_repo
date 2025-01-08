@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="2312d8ae-b5f8-4818-b91b-f62ba341b0ab" name="postgres@localhost (DDL) Mapping">
+      <data-sources db="2b990de8-fc7c-427f-a88a-014c20cbc7c9" ddl="3a49f605-7ed0-4a74-b749-d4c27df49dc8" />
+      <scope>
+        <node kind="database" qname="guest">
+          <node kind="schema" qname="public" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
   <component name="SqlDataSourceStorage">
     <option name="dataSources">
       <list>

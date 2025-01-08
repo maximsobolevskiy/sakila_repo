@@ -1,11 +1,7 @@
 CREATE TABLE public.film_category
 (
-    film_id     smallint                NOT NULL
-        REFERENCES public.film
-            ON UPDATE CASCADE ON DELETE RESTRICT,
-    category_id smallint                NOT NULL
-        REFERENCES public.category
-            ON UPDATE CASCADE ON DELETE RESTRICT,
+    film_id     smallint                NOT NULL REFERENCES public.film ON UPDATE CASCADE ON DELETE RESTRICT,
+    category_id smallint                NOT NULL REFERENCES public.category ON UPDATE CASCADE ON DELETE RESTRICT,
     last_update timestamp DEFAULT NOW() NOT NULL,
     PRIMARY KEY (film_id, category_id)
 );

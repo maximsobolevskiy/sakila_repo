@@ -1,7 +1,6 @@
 CREATE TABLE public.category
 (
-    category_id integer   DEFAULT NEXTVAL('category_category_id_seq'::regclass) NOT NULL
-        PRIMARY KEY,
+    category_id integer   DEFAULT NEXTVAL('category_category_id_seq'::regclass) NOT NULL PRIMARY KEY,
     name        varchar(25)                                                     NOT NULL,
     last_update timestamp DEFAULT NOW()                                         NOT NULL
 );
