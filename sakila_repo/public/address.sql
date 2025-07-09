@@ -1,7 +1,7 @@
 CREATE TABLE public.address
 (
     address_id  integer   DEFAULT NEXTVAL('address_address_id_seq'::regclass) NOT NULL PRIMARY KEY,
-    address     varchar(50)                                                   NOT NULL,
+    address     varchar(55)                                                   NOT NULL,
     address2    varchar(50),
     district    varchar(20)                                                   NOT NULL,
     city_id     smallint                                                      NOT NULL REFERENCES public.city ON UPDATE CASCADE ON DELETE RESTRICT,
