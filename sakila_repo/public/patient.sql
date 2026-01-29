@@ -8,7 +8,7 @@ CREATE TABLE public.patient
     updated_at   timestamp with time zone DEFAULT CURRENT_TIMESTAMP(6) NOT NULL,
     link_data    jsonb,
     version      integer                  DEFAULT 0                    NOT NULL,
-    old_id       varchar(255)
+    old_id       varchar(250)
 );
 
 ALTER TABLE public.patient
