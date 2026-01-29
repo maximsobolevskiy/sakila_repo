@@ -6,7 +6,7 @@ CREATE TABLE public.actor
     last_update timestamp DEFAULT NOW()                                   NOT NULL
 );
 
-COMMENT ON TABLE public.actor IS 'table with actors';
+COMMENT ON TABLE public.actor IS 'table with actorss';
 
 ALTER TABLE public.actor
     OWNER TO guest;
